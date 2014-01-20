@@ -278,7 +278,7 @@ var Dataset = (function() {
           var item = that._transformDatum(datum), isDuplicate;
 
           // checks for duplicates
-+          isDuplicate = that.allowDuplicates ? false : utils.some(suggestions, function(suggestion) {
+          isDuplicate = that.allowDuplicates ? false : utils.some(suggestions, function(suggestion) {
             return item.value === suggestion.value;
           });
 

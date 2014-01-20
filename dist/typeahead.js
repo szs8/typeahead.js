@@ -535,7 +535,7 @@
                     suggestions = suggestions.slice(0);
                     utils.each(data, function(i, datum) {
                         var item = that._transformDatum(datum), isDuplicate;
-                        +isDuplicate = that.allowDuplicates ? false : utils.some(suggestions, function(suggestion) {
+                        isDuplicate = that.allowDuplicates ? false : utils.some(suggestions, function(suggestion) {
                             return item.value === suggestion.value;
                         });
                         !isDuplicate && suggestions.push(item);
